@@ -1,31 +1,7 @@
 
 
        
-        print("Checkout done !")
-
-def show_all_rooms():
-    print("==ALL ROOMS==")
-    for roomnumber,info in rooms.items():
-        print(f"Room {roomnumber} - {info['status']}")
-
-def show_vacant_rooms():
-    print("== VACANT ROOMS ==")
-    found = False
-    for roomnumber,info in rooms.items():
-        if info["status"].strip() == "vacant":
-            print(roomnumber)
-            found = True
-    if not found:
-        print("No Vacant Rooms")
-
-def show_occupied_rooms():
-    print("== OCCUPIED ROOMS ==")
-    found = False
-    for roomnumber,info in rooms.items():
-        if info["status"] == "occupied":
-            print(f"{roomnumber} - Guest:{info['guest']}")
-            found = True
-    if not found:
+       
         print("No Occupied Rooms")
 
 def main():
