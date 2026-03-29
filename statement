@@ -1,17 +1,5 @@
 
-##  Scope of the Project
-
-This project focuses on building a simple console-based Hotel Management System capable of handling basic room operations. It includes real-time room status tracking and persistent storage using JSON files so that data remains even after the program is closed.
-
-The scope covers:
-
-* Room allocation and release
-* Guest details recording
-* Basic reporting of room availability
-
-Advanced functionalities like billing, multi-user access, and graphical UI are not included in the current version but may be added in future upgrades.
-
----
+\
 
 ##  Target Users
 
