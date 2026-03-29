@@ -1,10 +1,2 @@
 
 
-##  High-Level Features
-
-* **Check-In System:** Assign a room and store guest name and arrival date.
-* **Check-Out System:** Mark the room as vacant and record departure date.
-* **View All Rooms:** Display the complete list of rooms with current status.
-* **Vacant Room Display:** Quickly view only available rooms.
-* **Occupied Room Display:** Show rooms currently booked along with guest names.
-* **Persistent Storage:** Automated saving of room updates in a JSON file.
