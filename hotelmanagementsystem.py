@@ -1,41 +1,5 @@
 
-import json
-import os
-from datetime import datetime
 
-datafile= "roomsdata.json"
-
-def loadrooms():
-    if os.path.exists(datafile):
-        with open(datafile) as file:
-            try:
-                return json.load(file)
-            except:
-                return {}
-    else:
-        return {}
-
-def saverooms(rooms): 
-    with open(datafile, "w") as file:
-        json.dump(rooms, file, indent = 4)
-
-rooms = loadrooms()
-
-if not rooms :
-    for floor in range(1,6):
-        for room in range(1,11):
-            roomnumber = str(floor) + str(room).zfill(2)
-            rooms[roomnumber] = { "status" : "vacant",
-                                  "guest": "",
-                                  "checkin" : "",
-                                  "checkout" : ""}
-
-def checkin():
-    print("==Check In==")
-    room = input("Enter room no. :")
-    if room not in rooms:
-        print("Wrong room no.")
-    elif rooms[room]["status"]== "occupied":
         print("This room is occupied already")
     else:
         guestname = input("Guest name :")
