@@ -1,31 +1,6 @@
 
 
-        print("This room is occupied already")
-    else:
-        guestname = input("Guest name :")
-        checkindate=str(datetime.now().date())
-        rooms[room]["status"] = "occupied"
-        rooms[room]["guest"] = guestname
-        rooms[room]["checkin"] = checkindate
-        rooms[room]["checkout"] = ""
-        saverooms(rooms)
-        print("Checkin done !")
-
-def checkout():
-    print("==Check Out==")
-    room = input("Enter room no. :")
-    if room not in rooms:
-        print("Wrong room no,")
-        return
-    if rooms[room]["status"] == "vacant":
-        print(" The room is already empty")
-    else:
-        checkoutdate=str(datetime.now().date())
-        rooms[room]["status"] = "vacant"
-        rooms[room]["guest"] = ""
-        rooms[room]["checkout"] = checkoutdate
-        rooms[room]["checkin"] = ""
-        saverooms(rooms)
+       
         print("Checkout done !")
 
 def show_all_rooms():
